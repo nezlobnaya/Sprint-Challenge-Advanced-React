@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import PlayersList from './components/PlayersList/PlayersList';
+import Navbar from './components/NavBar/NavBar';
 import styled from 'styled-components';
 import './index.css'
 
@@ -35,9 +37,11 @@ export default class App extends React.Component {
     return (
       <>    
         <UserList>
-          <div className='App'>
+         <div className='App'>
+            <Navbar />
             <h1>Soccer players</h1>
-          </div>
+            <PlayersList playersData={this.state.playersData} />
+         </div>
         </UserList>
        </>
     )
