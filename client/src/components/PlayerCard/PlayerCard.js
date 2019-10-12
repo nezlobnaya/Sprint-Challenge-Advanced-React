@@ -22,7 +22,7 @@ const Card = styled.div`
           <a
            href={`http://www.google.com/search?q=${props.name.split(' ').join('+')}`}
            target='_blank' rel='noopener noreferrer'>
-           <h3>⚽{props.name} ⚽</h3>
+           <h3><span role='img'  aria-label='ball'>⚽</span> {props.name} <span role='img' aria-label='ball'>⚽</span></h3>
            <p>{props.country}</p>
            <p>Google Searches: {props.searches}</p>
           </a>
